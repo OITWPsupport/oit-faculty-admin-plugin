@@ -1,0 +1,64 @@
+Rhett Hancock (rhetthancock@boisestate.edu)
+*-----------------------------------------------------------------*
+NOTE: Line numbers refer to the lines before any changes were made
+*-----------------------------------------------------------------*
+
+June 23, 2014
+
+	modules/personnel.php
+		Line 460:	Changed '&' to '&amp;'
+
+	modules/group.php
+		Line 251:	Added '$deleteURL = OFAADMIN . '?page=group&action=delete&id=' . $data->id;'
+		Line 323:	Added '</br><a href="{$deleteURL}">Delete</a>'
+
+June 24, 2014
+
+	includes/helpers/ofaGroupWidget.php
+		Line 172-173:	Added $groupRemoveLink variable and corresponding comment (The remove button's link)
+		Line 191:	Changed the href value from '#' to '$groupRemoveLink'
+
+	modules/personnel.php
+		Line 288:	Corrected a spelling error (assocation -> association)
+
+	modules/group.php
+		Line 115: 	Added 'case 'delete':'
+		Line 303:	Changed maxlength from 10 to 20
+		Line 367:	Changed $deleted = '$employeesGroupsX->delete($delete);' to '$deleted = $employeesGroupsX->delete_1($delete);'
+		Lines 429-444:	Added ability to delete groups by copying/tweaking personnel.php's method
+			Tweaks:
+				- Changed '$employee = new ofaEmployees();' to '$group = new ofaGroups();'
+				- Changed '$delete = $employee->delete('ofaEmployees', $deleteId);' to '$delete = $group->delete('ofaGroups', $deleteId);'
+
+	public/js/ofaForm.js
+		Line 35-45:	Surrounded this statements '$('#ofaGroupWidgetRemove').live('click', function(removeEvent){' innards with the if statement
+				'if($(this).attr('href') == '#')' and added a corresponding comment
+
+June 25, 2014
+
+	includes/helper/ofaGroupWidget.php
+		Line 173:	Appended ''&ret=' . urlencode(OFAADMIN . '?page=personnel&action=edit&id=' . $_GET['id']);' to $groupRemoveLink
+
+	modules/group.php
+		Line 352:	Changed '$continueURL = OFAADMIN . '?page=group';' to '$continueURL = (isset($_GET['ret'])) ? $_GET['ret'] : OFAADMIN . '?page=group';'
+
+June 30, 2014
+
+	models/ofaSections.php
+		Lines 26-63:	Removed the load_1() function from inside of the blank() function
+		Lines 28-47:	Removed code located after blank()'s return statement
+
+	modules/course.php
+		Line 916:	Added '$deleteLink = OFAADMIN . '?page=section&action=delete&id=' . $s->sectionId . '&paged=' . $currentPage;'
+		Line 919:	Added ' | <span class="trash"><a title="Delete Section" href="%s">Delete</a></span>' to <div class="row-actions">
+				Also appended $deleteLink to the list of arguments for the sprintf() function.
+
+	modules/group.php
+		Line 491:	Added '$deleteLink = OFAADMIN . '?page=group&action=delete&id=' . $g->id . '&ref=' . ofaGet::getCurrentPage();'
+		Line 494:	Added ' | <span class="trash"><a title="Delete Group Membership" href="%s">Delete</a></span>' to <div class="row-actions">
+				Also appended $deleteLink to the list of arguments for the sprintf() function.
+
+October 16, 2014
+
+	modules/personnel.php
+		Line 454:	Changed the maxlength attribute of the Office Hours field from 75 to 200 characters.

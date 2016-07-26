@@ -1,0 +1,229 @@
+/*
+ * =Misc Styles	
+ */
+
+.ofaCF:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+#ofaIcon {
+	background: url('../images/icon-32.png') no-repeat;
+}
+
+ol.lettered {
+	list-style: lower-alpha;
+}
+
+#currentSemester {
+	display: inline-block;
+	background: #f9f9f9;
+	padding: 12px 10px;
+	border: 1px #dfdfdf solid;
+}
+
+#currentSemester h4 {
+	margin-top: 0;
+}
+
+#bulkAddWrapper {
+	margin: 12px 0;
+}
+
+#instructionTab {
+	position: relative;
+	display: inline-block;
+	background: #f9f9f9;
+	height: 24px;
+	margin-bottom: -1px;
+	padding: 0 5px;
+	border: 1px #dfdfdf solid;
+	font-size: 15px;
+	line-height: 24px;
+	text-align: center;
+	text-decoration: none;
+	z-index: 1000;
+}
+
+#instructionTab span {
+	display: none;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: #f9f9f9;
+	width: 100%;
+	height: 1px;
+	margin-bottom: -1px;
+}
+
+#bulkUploadInstructions {
+	display: none;
+	position: relative;
+	background: #f9f9f9;
+	min-height: 96px;
+	padding: 12px 10px;
+	border: 1px #dfdfdf solid;
+	overflow: hidden;
+}
+
+#bulkAddImage {
+	background: #fff;
+	width: 96%;
+	max-width: 862px;
+	margin: 12px 0;
+	padding: 2%;
+	box-shadow: 1px 2px 10px #999;
+}
+
+/**
+ * 	=Table styles
+ */
+
+#ofaPersonnelList th.column-1-heading {
+	width: 25%;
+}
+
+#ofaPersonnelList th.column-2-heading {
+	width: 25%;
+}
+
+#ofaPersonnelList th.column-3-heading {
+	width: 25%;
+}
+
+#ofaPersonnelList th.column-4-heading {
+	width: 15%;
+}
+
+#ofaPersonnelList th.column-5-heading {
+	width: 10%;
+}
+
+
+#ofaGroupList th.column-1-heading {
+	width: 35%;
+}
+
+#ofaGroupList th.column-2-heading {
+	width: 30%;
+}
+
+#ofaGroupList th.column-3-heading {
+	width: 20%;
+}
+
+#ofaGroupList th.column-4-heading {
+	width: 15%;
+}
+
+
+#ofaPersonalMembershipList th.column-1-heading {
+	width: 50%;
+}
+
+#ofaPersonalMembershipList th.column-2-heading {
+	width: 35%;
+}
+
+#ofaPersonalMembershipList th.column-3-heading {
+	width: 15%;
+}
+
+
+#ofaCourseList th.column-1-heading {
+	width: 30%;
+}
+
+#ofaCourseList th.column-2-heading {
+	width: 25%;
+}
+
+#ofaCourseList th.column-3-heading {
+	width: 45%;
+}
+
+
+#ofaSectionList th.column-1-heading {
+	width: 15%;
+}
+
+#ofaSectionList th.column-2-heading {
+	width: 15%;
+}
+
+#ofaSectionList th.column-3-heading {
+	width: 15%;
+}
+
+#ofaSectionList th.column-4-heading {
+	width: 25%;
+}
+
+#ofaSectionList th.column-5-heading {
+	width: 20%;
+}
+
+#ofaSectionList th.column-6-heading {
+	width: 10%;
+}
+
+
+#ofaInvalidSectionList th.column-1-heading {
+	width: 45%;
+}
+
+#ofaInvalidSectionList th.column-2-heading {
+	width: 20%;
+}
+
+#ofaInvalidSectionList th.column-3-heading {
+	width: 20%;
+}
+
+#ofaInvalidSectionList th.column-4-heading {
+	width: 15%;
+}
+
+
+#ofaSemesterList th.column-1-heading {
+	width: 50%;
+}
+
+#ofaSemesterList th.column-2-heading {
+	width: 25%;
+}
+
+#ofaSemesterList th.column-3-heading {
+	width: 25%;
+}
+
+/*
+ * =Form styles
+ */
+
+label.bold {
+	font-weight: bold;
+}
+
+span.invalidFieldName {
+	display: none;
+}
+
+.form-table img.photo {
+	background: #fafafa;
+    color: #333333;
+    width: 200px;
+    height: 225px;
+    margin: 1px;
+    padding: 6px 5px;
+    border: 1px #dfdfdf solid;
+    -webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.form-table code {
+	padding: 1px;
+}

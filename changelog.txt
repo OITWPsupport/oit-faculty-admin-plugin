@@ -1,0 +1,36 @@
+OIT Faculty Admin - Changelog
+
+==== Version 1.1.12 - 7/15/16 ====
+- PHP 5.4 and above no longer support Call-time pass-by-reference;
+modifying includes/helpers/ofaGroupWidget.php to use ksort($groupNames) instead of 
+ksort(&$groupNames).
+- Logs are showing "Call to undefined function get_blog_details()" in 
+includes/ofaDefinitions.php so we're returning an empty array in getCurrentSite rather 
+than a call to get_blog_details.
+- Updates personnel.php and course.php so the text of the "Syllabus" link now reads 
+"[course] [course number] syllabus" to avoid the non-distinguishable link errors found by 
+Siteimprove accessibility scanner
+
+==== Version 1.1.10 - 12-13-2013 ====
+Friday the 13th!
+- Can now actually delete personnel pictures
+- When a new picture is uploaded the old is automatically deleted
+- Personnel CV files can also be deleted
+
+==== Version 1.1.9 - 05-07-2013 ====
+- Can now delete personnel pictures
+
+==== Version 1.1.8 - 04-00-2013 ====
+- Can now search for personnel within a group
+
+==== Version 1.1.1 - 10-19-2012 ====
+ - Bug fixes
+ - Finished documentation
+
+==== Version 1.1.0 - 10-16-2012 ====
+ - New module: Course
+ - Bug fixes
+ - Security enhancements
+
+==== Version 1.0.0 - 09-20-2012 ====
+ - Included modules: Personnel & Group

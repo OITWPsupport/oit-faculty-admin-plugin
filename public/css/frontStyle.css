@@ -1,0 +1,83 @@
+/*
+ * Search
+ */
+
+form#ofaSearch {
+	margin-bottom: 24px;
+}
+
+form#ofaSearch input[type="text"] {
+	width: 75%;
+}
+
+form#ofaSearch input[type="submit"] {
+	margin-bottom: 1px;
+}
+
+/*
+ * Pagination
+ */
+
+.ofaPagination a.page-numbers {
+	display: inline-block;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e6e6e6), color-stop(100%, #c9c9c9));
+	background-image: -webkit-linear-gradient(#e6e6e6, #c9c9c9);
+	background-image: -moz-linear-gradient(#e6e6e6, #c9c9c9);
+	background-image: -o-linear-gradient(#e6e6e6, #c9c9c9);
+	-pie-background: linear-gradient(#e6e6e6, #c9c9c9);
+	margin: 5px 2px;
+	padding: 0 5px;
+	border: 1px solid #c2c2c2;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-o-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	border-radius: 6px;
+	-moz-box-shadow: inset 0 1px 0 0 white;
+	-webkit-box-shadow: inset 0 1px 0 0 white;
+	-o-box-shadow: inset 0 1px 0 0 white;
+	box-shadow: inset 0 1px 0 0 white;
+	color: #333333 !important;
+	text-shadow: 0 1px 0 #f1eeee;
+	behavior: url("./wp-content/themes/framewerk/PIE.php");
+	position: relative;
+}
+
+.ofaPagination a.page-numbers:hover {
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c2c2c2), color-stop(100%, #d9d9d9));
+	background-image: -webkit-linear-gradient(#c2c2c2, #d9d9d9);
+	background-image: -moz-linear-gradient(#c2c2c2, #d9d9d9);
+	background-image: -o-linear-gradient(#c2c2c2, #d9d9d9);
+	-pie-background: linear-gradient(#c2c2c2, #d9d9d9);
+	-moz-box-shadow: inset 0 1px 0 0 #f2f2f2;
+	-webkit-box-shadow: inset 0 1px 0 0 #f2f2f2;
+	-o-box-shadow: inset 0 1px 0 0 #f2f2f2;
+	box-shadow: inset 0 1px 0 0 #f2f2f2;
+	cursor: pointer;
+}
+
+.ofaPagination span.current {
+	margin: 5px 2px;
+	padding: 0 5px;
+	font-weight: bold;
+}
+
+/*
+ * Personnel styles 	
+ */
+
+.ofaPersonnelEntry .one_third,
+.ofaPersonnelEntry .two_thirds {
+	margin-bottom: 0;
+}
+
+div#ofaBioPhoto {
+	width: 200px;
+	height: 225px;
+}
+
+img#ofaBioPhotoHalf {
+	width: 100px;
+	height: 112.5px;
+}

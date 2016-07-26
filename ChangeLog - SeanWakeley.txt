@@ -1,0 +1,8 @@
+course.php
+* line 316  - I added $deletelink 
+* line 319  - I added the delete button and function 
+* line 855 - changed $deleteLink
+* line 1294 -  changed $deleteLink
+* line 278 – added Delete function for courses
+* line 794 – added delete function for sections
+* line 1251 – added delete function for semesters 
