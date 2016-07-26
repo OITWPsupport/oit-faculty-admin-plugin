@@ -850,7 +850,8 @@ HTML;
 				
 				// Handle the profile image on the left side
 				$source = (!empty($entry->photo)) ? OFACONTENTURL . OFABIOPHOTODIR . '/' . $entry->photo : OFABIOBLANK;
-				$left = sprintf('<a href="%s"><img id="ofaBioPhotoHalf" src="%s" title="%s" /></a>', $profile, $source, $name);
+				// $left = sprintf('<a href="%s"><img id="ofaBioPhotoHalf" src="%s" title="%s" /></a>', $profile, $source, $name);
+				$left = sprintf('<a href="%s"><img class="ofaBioPhotoHalf" id="ofaBioPhotoHalf%s" src="%s" alt="%s" /></a>', $profile, $entry->id, $source, $employee->getName($entry));
 				
 				// Use position if group listing, otherwise use job title
 				$title = (isset($entry->position) && !empty($entry->position)) ? $entry->position : $entry->jobTitle;
