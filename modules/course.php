@@ -1406,7 +1406,7 @@ HTML;
 		if ($doSearch == true) {		
 			$html .= <<<HTML
 <form id="ofaSearch" action="{$action}" method="get">
-	<input type="text" name="oQ" value="{$search}" />
+	<input type="text" name="oQ" id="oQ" title="Search for courses" value="{$search}" />
 	<input type="hidden" name="filter" value="{$semesterId}" />
 	<input type="submit" value="Search" />
 	<a href="?view=">View All</a>

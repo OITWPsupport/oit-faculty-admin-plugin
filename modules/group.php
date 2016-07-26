@@ -570,7 +570,7 @@ HTML;
 				
 				$html .= <<<HTML
 <form id="ofaSearch" action="{$action}" method="get">
-	<input type="text" name="oQ" value="" />
+	<input type="text" name="oQ" id="oQ" title="Search for people" value="" />
 	<input type="submit" value="Search" />
 	<a href="?view=">View All</a>
 </form>
