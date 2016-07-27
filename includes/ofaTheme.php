@@ -325,7 +325,7 @@ HTML;
 	 * @return $html: element HTML
 	 */
 	private function generateSelect($name, $values, $current = '') {
-		$html = sprintf('<select id="%s" name="%s">', $name, $name);
+		$html = sprintf('<select id="%s" name="%s" title="%s">', $name, $name, $name);
 		$counter = 0;
 
 		foreach ($values as $value) {

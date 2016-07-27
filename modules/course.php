@@ -1451,7 +1451,8 @@ HTML;
 		if (count((array)$records) > 0) {
 			$headings = '<tr><th width="80%">Course</th><th>Instructor</th></tr>';
 			
-			$html .= "<table style=\"width: 100%;\"><thead>{$headings}</thead><tfoot style=\"background: #edeeef;\">{$headings}</tfoot><tbody>";
+			// $html .= "<table style=\"width: 100%;\"><thead>{$headings}</thead><tfoot style=\"background: #edeeef;\">{$headings}</tfoot><tbody>";
+			$html .= "<table style=\"width: 100%;\"><thead>{$headings}</thead><tbody>";
 			
 			// Iterate through each employee record to create the list
 			foreach ($records as $entry) {
