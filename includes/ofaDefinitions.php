@@ -295,10 +295,9 @@ class ofaWpSecurity {
 	 */
 	public static function getCurrentSite() {
 		global $blog_id;
-		return array();
-		// return get_blog_details(
-		//	array(
-		//		'blog_id' => $blog_id));
+		return get_blog_details(
+			array(
+				'blog_id' => $blog_id));
 	}
 	
 	/**
