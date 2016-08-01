@@ -1,5 +1,10 @@
 OIT Faculty Admin - Changelog
 
+==== Version 1.1.16 - 8/1/16 ====
+- Call to get_blog_details() restored. (See below). Commenting this out wasn't tested--
+it fixed one problem but caused a new one: profile pages on subsites stopped working. 
+Restoring this addresses IR711454, IR711535.
+
 ==== Version 1.1.12 - 7/15/16 ====
 - PHP 5.4 and above no longer support Call-time pass-by-reference;
 modifying includes/helpers/ofaGroupWidget.php to use ksort($groupNames) instead of 
