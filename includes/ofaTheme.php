@@ -325,7 +325,10 @@ HTML;
 	 * @return $html: element HTML
 	 */
 	private function generateSelect($name, $values, $current = '') {
-		$html = sprintf('<select id="%s" name="%s" title="%s">', $name, $name, $name);
+		// This version of the line fixed an accessibility error, but broke the ability for admins to add personnel to groups. Needs to be re-engineered before we can use it to fix that WCAG error
+		// $html = sprintf('<select id="%s" name="%s" title="%s">', $name, $name, $name);
+		// This is the original version of the same line:
+		$html = sprintf('<select id="%s" name="%s">', $name, $name);
 		$counter = 0;
 
 		foreach ($values as $value) {

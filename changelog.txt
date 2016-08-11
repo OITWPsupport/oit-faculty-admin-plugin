@@ -1,5 +1,10 @@
 OIT Faculty Admin - Changelog
 
+==== Version 1.1.17 - 8/11/16 ====
+- Previous version broke the admin's ability to add personnel to groups. This restores that 
+(although it probably reintroduces the accessibility error we aimed to fix in 1.1.12-1.1.16)
+(Change is in includes/ofaTheme.php)
+
 ==== Version 1.1.16 - 8/1/16 ====
 - Call to get_blog_details() restored. (See below). Commenting this out wasn't tested--
 it fixed one problem but caused a new one: profile pages on subsites stopped working. 
