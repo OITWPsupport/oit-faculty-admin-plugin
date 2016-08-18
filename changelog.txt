@@ -1,5 +1,9 @@
 OIT Faculty Admin - Changelog
 
+==== Version 1.1.18 - 8/18/16 ====
+Bringing in auto-update logic. The auto-update code present in previous version is non-
+functional. This will use the same updater.php mechanism used in our other plugins.
+
 ==== Version 1.1.17 - 8/11/16 ====
 - Previous version broke the admin's ability to add personnel to groups. This restores that 
 (although it probably reintroduces the accessibility error we aimed to fix in 1.1.12-1.1.16)
