@@ -20,6 +20,17 @@ The plugin is pre-loaded with these modules:
 	Manages courses and semesters. Also interacts with the personnel module to associate course sections to personnel
 */
 
+
+if( ! class_exists( 'Boise_State_OFA_Plugin_Updater' ) ){
+	include_once( plugin_dir_path( __FILE__ ) . 'updater.php' );
+}
+
+$updater = new Boise_State_OFA_Plugin_Updater( __FILE__ );
+$updater->set_username( 'OITWPsupport' );
+$updater->set_repository( 'oit-faculty-admin-plugin' );
+$updater->initialize();
+
+
 /**
  * The plugin directory root
  */
