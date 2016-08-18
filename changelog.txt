@@ -1,5 +1,8 @@
 OIT Faculty Admin - Changelog
 
+==== Version 1.1.20 - 8/18/16 ====
+Auto update test.
+
 ==== Version 1.1.19 - 8/18/16 ====
 Auto update test.
 

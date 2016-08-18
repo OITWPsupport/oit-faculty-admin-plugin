@@ -2,7 +2,7 @@
 /**
 Plugin Name: OIT Faculty Admin
 Description: The official Boise State plugin for faculty and staff management.
-Version: 1.1.19
+Version: 1.1.20
 Author: Martin Ronquillo, Boise State University OIT/EAS WP Support Team
 
 This plugin was developed to provide an easy tool for listing personnel on WordPress websites.
